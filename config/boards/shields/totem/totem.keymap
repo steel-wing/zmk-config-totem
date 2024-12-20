@@ -22,10 +22,8 @@
 #define ADJ  3
 
 &mt {
-  quick-tap-ms = <100>;
-  global-quick-tap;
+  quick-tap-ms = <200>;
   flavor = "tap-preferred";
-  tapping-term-ms = <170>;
 };
 
 / {
@@ -38,19 +36,6 @@
             };
     };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N2>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp G &kp I &kp F>
-                ;
-        };
-    };
 
         keymap {
                 compatible = "zmk,keymap";
